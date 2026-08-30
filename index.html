@@ -1,25 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>
-        real web
-    </title>
-    <style>
-        .moha{
-            font-size:xx-large;
-            color: brown;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BusinessFlow | Modern Business Management</title>
+    <meta
+      name="description"
+      content="BusinessFlow helps businesses manage operations, sales, teams, and finance in one modern platform."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="bi bi-briefcase-fill me-2"></i>BusinessFlow</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-primary" href="contact.html">Book Demo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        }
+    <header class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="hero-badge"><i class="bi bi-graph-up-arrow"></i> Trusted by growing businesses</span>
+            <h1 class="hero-title">Turn business data into <span class="accent">real growth.</span></h1>
+            <p class="hero-copy">
+              BusinessFlow brings sales, projects, operations, and finance into one simple system so your team can plan better, work faster, and make smarter decisions.
+            </p>
+            <div class="hero-actions">
+              <a href="dashboard.html" class="btn btn-primary btn-lg">Explore Dashboard</a>
+              <a href="services.html" class="btn btn-outline-primary btn-lg">View Services</a>
+            </div>
+            <div class="d-flex gap-4 mt-4 flex-wrap">
+              <div>
+                <div class="fw-bold fs-4">12K+</div>
+                <small class="text-muted">Businesses supported</small>
+              </div>
+              <div>
+                <div class="fw-bold fs-4">3.4x</div>
+                <small class="text-muted">Faster workflows</small>
+              </div>
+              <div>
+                <div class="fw-bold fs-4">99.9%</div>
+                <small class="text-muted">System uptime</small>
+              </div>
+            </div>
+          </div>
 
-    </style>
-</head>
-<body>
-    <h1 id="salama" class="ha">
-        my real web applications
-    </h1>
-</body>
-<script>
-    document.getElementsByClassName(".ha").innertext="awliyo";
+          <div class="col-lg-6">
+            <div class="hero-visual">
+              <div class="hero-panel shadow-lg">
+                <div class="panel-header d-flex justify-content-between align-items-center mb-4">
+                  <div>
+                    <div class="text-muted small">Performance Overview</div>
+                    <strong>Q3 Business Report</strong>
+                  </div>
+                  <span class="badge text-bg-success">+18.2%</span>
+                </div>
 
-</script>
+                <div class="row g-3 mb-4">
+                  <div class="col-6">
+                    <div class="metric-card h-100">
+                      <div class="icon-box bg-primary-subtle text-primary"><i class="bi bi-currency-dollar"></i></div>
+                      <div class="fw-bold fs-5">$1.42M</div>
+                      <small class="text-muted">Revenue</small>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="metric-card h-100">
+                      <div class="icon-box bg-success-subtle text-success"><i class="bi bi-people"></i></div>
+                      <div class="fw-bold fs-5">3,240</div>
+                      <small class="text-muted">Customers</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mini-chart">
+                  <span style="height: 35%"></span>
+                  <span style="height: 48%"></span>
+                  <span style="height: 52%"></span>
+                  <span style="height: 70%"></span>
+                  <span style="height: 82%"></span>
+                  <span style="height: 92%"></span>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4 small text-muted">
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="text-primary fw-bold mb-2">WHY BUSINESSES CHOOSE US</p>
+            <h2 class="section-title">Everything you need to run a smarter business</h2>
+            <p class="section-subtitle mx-auto">
+              From operations and customer service to financial visibility, our system offers a complete view of your business in real time.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-6 col-xl-3">
+              <div class="feature-item h-100">
+                <div class="icon"><i class="bi bi-bar-chart-line"></i></div>
+                <h5>Real-time analytics</h5>
+                <p class="text-muted mb-0">Understand revenue, performance, and growth with clear dashboards built for decisions.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="feature-item h-100">
+                <div class="icon"><i class="bi bi-kanban"></i></div>
+                <h5>Workflow control</h5>
+                <p class="text-muted mb-0">Keep teams aligned with clear tasks, approvals, and department visibility from one place.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="feature-item h-100">
+                <div class="icon"><i class="bi bi-wallet2"></i></div>
+                <h5>Finance tracking</h5>
+                <p class="text-muted mb-0">Monitor cash flow, spending, and profitability to keep your business sustainable.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+              <div class="feature-item h-100">
+                <div class="icon"><i class="bi bi-people-fill"></i></div>
+                <h5>Team productivity</h5>
+                <p class="text-muted mb-0">Improve employee coordination, service quality, and accountability across every function.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-white">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="content-panel p-4">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Business team planning" class="rounded-4" style="height: 420px; width: 100%; object-fit: cover;" />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p class="text-primary fw-bold mb-2">BUSINESS IMPACT</p>
+              <h2 class="section-title">Built for efficiency, visibility, and long-term growth</h2>
+              <p class="section-subtitle">We help organizations replace fragmented tools with one connected management system that keeps every department moving in the same direction.</p>
+
+              <div class="d-grid gap-3 mt-4">
+                <div class="inline-card p-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Improve team coordination and decision-making
+                </div>
+                <div class="inline-card p-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Reduce manual work with automation and reporting
+                </div>
+                <div class="inline-card p-3">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>
+                  Create a clearer picture of sales, service, and performance
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="text-primary fw-bold mb-2">KEY PERFORMANCE</p>
+            <h2 class="section-title">Operational metrics that matter</h2>
+          </div>
+
+          <div class="stat-grid">
+            <div class="stat-card">
+              <div class="value">86%</div>
+              <div class="label">Project delivery efficiency</div>
+            </div>
+            <div class="stat-card">
+              <div class="value">42%</div>
+              <div class="label">Lower admin workload</div>
+            </div>
+            <div class="stat-card">
+              <div class="value">2.7x</div>
+              <div class="label">Faster reporting cycles</div>
+            </div>
+            <div class="stat-card">
+              <div class="value">97%</div>
+              <div class="label">Customer satisfaction rate</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-white">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="text-primary fw-bold mb-2">WHAT CLIENTS SAY</p>
+            <h2 class="section-title">Success stories from real teams</h2>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="info-card h-100 p-4 testimonial-card">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="avatar">AR</div>
+                  <div>
+                    <h6 class="mb-0">Amina R.</h6>
+                    <small class="text-muted">Operations Manager</small>
+                  </div>
+                </div>
+                <p class="text-muted mb-0">“The dashboard gave our leadership team a clear view of performance and helped us reduce wasted effort in just a few weeks.”</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-card h-100 p-4 testimonial-card">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="avatar">JS</div>
+                  <div>
+                    <h6 class="mb-0">James S.</h6>
+                    <small class="text-muted">Business Owner</small>
+                  </div>
+                </div>
+                <p class="text-muted mb-0">“We replaced multiple disconnected tools with one platform and immediately saw better reporting and faster execution.”</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info-card h-100 p-4 testimonial-card">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="avatar">LN</div>
+                  <div>
+                    <h6 class="mb-0">Lina N.</h6>
+                    <small class="text-muted">Finance Lead</small>
+                  </div>
+                </div>
+                <p class="text-muted mb-0">“Our cash-flow tracking and reporting are now much more accurate, and the team spends far less time on manual follow-ups.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-banner text-center">
+            <p class="text-primary fw-bold mb-2">READY TO GROW?</p>
+            <h2 class="section-title mb-3">Build a stronger, smarter business today</h2>
+            <p class="mx-auto mb-4" style="max-width: 700px; color: rgba(15,23,42,0.7);">
+              Let BusinessFlow support your operations with the right data, tools, and processes to help your business scale confidently.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a href="contact.html" class="btn btn-primary btn-lg">Get Started</a>
+              <a href="dashboard.html" class="btn btn-outline-primary btn-lg">See Demo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4 align-items-center text-center text-lg-start">
+          <div class="col-lg-4">
+            <h5 class="mb-3">BusinessFlow</h5>
+            <p class="mb-0 text-light-emphasis">Modern management tools for smarter business operations.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex justify-content-center justify-content-lg-center gap-3 flex-wrap">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="services.html">Services</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <p class="mb-0 text-light-emphasis">hello@businessflow.com</p>
+          </div>
+        </div>
+        <hr class="my-4 border-secondary" />
+        <div class="text-center small text-light-emphasis">© 2026 BusinessFlow. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
