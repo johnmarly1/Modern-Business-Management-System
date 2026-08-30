@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | BusinessFlow</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="bi bi-briefcase-fill me-2"></i>BusinessFlow</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-primary" href="contact.html">Book Demo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="dashboard-shell">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+          <div>
+            <p class="text-primary fw-bold mb-1">EXECUTIVE DASHBOARD</p>
+            <h1 class="section-title mb-0">Business Overview</h1>
+          </div>
+          <button class="btn btn-primary">Export Report</button>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="kpi-card h-100">
+              <p class="text-muted mb-2">Net Revenue</p>
+              <div class="kpi-figure">$1.42M</div>
+              <small class="text-success"><i class="bi bi-arrow-up-right"></i> 14.5%</small>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="kpi-card h-100">
+              <p class="text-muted mb-2">New Orders</p>
+              <div class="kpi-figure">2,418</div>
+              <small class="text-success"><i class="bi bi-arrow-up-right"></i> 8.3%</small>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="kpi-card h-100">
+              <p class="text-muted mb-2">Operational Cost</p>
+              <div class="kpi-figure">$520K</div>
+              <small class="text-danger"><i class="bi bi-arrow-down-right"></i> 3.1%</small>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="kpi-card h-100">
+              <p class="text-muted mb-2">Customer Retention</p>
+              <div class="kpi-figure">96.2%</div>
+              <small class="text-success"><i class="bi bi-arrow-up-right"></i> 6.8%</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-xl-8">
+            <div class="content-panel h-100">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 class="mb-0">Sales Performance</h4>
+                <span class="text-muted">Last 6 months</span>
+              </div>
+              <div class="chart-bars">
+                <div class="bar" style="height: 42%;"><span>Jan</span></div>
+                <div class="bar" style="height: 50%;"><span>Feb</span></div>
+                <div class="bar" style="height: 64%;"><span>Mar</span></div>
+                <div class="bar" style="height: 72%;"><span>Apr</span></div>
+                <div class="bar" style="height: 81%;"><span>May</span></div>
+                <div class="bar" style="height: 92%;"><span>Jun</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="content-panel h-100">
+              <h4 class="mb-4">Department Health</h4>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between"><span>Sales</span><span>88%</span></div>
+                <div class="progress mt-2" style="height: 10px;">
+                  <div class="progress-bar bg-primary" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between"><span>Operations</span><span>72%</span></div>
+                <div class="progress mt-2" style="height: 10px;">
+                  <div class="progress-bar bg-success" style="width: 72%"></div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="d-flex justify-content-between"><span>Support</span><span>90%</span></div>
+                <div class="progress mt-2" style="height: 10px;">
+                  <div class="progress-bar bg-info" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between"><span>Finance</span><span>81%</span></div>
+                <div class="progress mt-2" style="height: 10px;">
+                  <div class="progress-bar bg-warning" style="width: 81%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-8">
+            <div class="content-panel">
+              <h4 class="mb-4">Recent Transactions</h4>
+              <div class="table-responsive">
+                <table class="table align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Client</th>
+                      <th>Type</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Northwind Co.</td>
+                      <td>Invoice</td>
+                      <td>$18,500</td>
+                      <td><span class="status-badge status-paid">Paid</span></td>
+                    </tr>
+                    <tr>
+                      <td>BluePeak Ltd.</td>
+                      <td>Subscription</td>
+                      <td>$4,200</td>
+                      <td><span class="status-badge status-pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <td>Harbor Foods</td>
+                      <td>Refund</td>
+                      <td>$1,300</td>
+                      <td><span class="status-badge status-low">Review</span></td>
+                    </tr>
+                    <tr>
+                      <td>Summit Labs</td>
+                      <td>Invoice</td>
+                      <td>$9,800</td>
+                      <td><span class="status-badge status-paid">Paid</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="content-panel h-100">
+              <h4 class="mb-4">Quick Actions</h4>
+              <div class="d-grid gap-3">
+                <button class="btn btn-primary text-start">Create New Invoice</button>
+                <button class="btn btn-outline-primary text-start">Update Inventory</button>
+                <button class="btn btn-outline-primary text-start">Review Payroll</button>
+                <button class="btn btn-outline-primary text-start">Generate Report</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="text-center small text-light-emphasis">© 2026 BusinessFlow. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
